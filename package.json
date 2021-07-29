@@ -1,0 +1,16 @@
+{
+  "name": "codingchallenge",
+  "version": "1.0.0",
+  "description": "Coding challenge for Zendesk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "author": "Brian Waobikeze",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "nodemon": "^2.0.12"
+  }
+}
