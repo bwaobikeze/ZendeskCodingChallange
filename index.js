@@ -29,10 +29,9 @@ axios.get('https://zccbrianwaobikeze.zendesk.com/api/v2/tickets.json/', {
   console.log(res.data)
 })
 .then((ticketChoice) =>{
-    rl.question(`Whitch ticket do you want view: `,ticketChoice=>{
+    rl.question(`Whitch ticket do you want view: `, ticketChoice => {
 
         showingTicket(ticketChoice);
-    
         rl.close()
     });
 })
