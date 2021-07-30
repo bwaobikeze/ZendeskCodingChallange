@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js"
+    "start": "nodemon index.js"
   },
   "author": "Brian Waobikeze",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prompt-sync": "^4.2.0"
   }
 }
