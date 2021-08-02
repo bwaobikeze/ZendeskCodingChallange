@@ -1,16 +1,9 @@
 const axios = require("axios");
 const prompt = require("prompt-sync")({ sigint: true });
 const pageTurn = require("./pageChoice");
-//const readline = require("readline");
 
-//const prompt = require ('prompt');
-//let pageFlip =pageTurn.pageDececion();
 
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-//   terminal: false,
-// });
+
 
 BeginPro();
 
@@ -24,18 +17,6 @@ function BeginPro() {
   } else console.log(choice);
 }
 
-// rl.question(
-//   `Welcome to Your Zendesk Ticket Viewer Please Press 1 to Move foward: `,
-//   (choice) => {
-//     if (choice == 1) {
-//       listTotaltickets();
-//     } else console.log("sorry see you again");
-//     rl.close();
-//   }
-// );
-
-// axios.get('https://zccbrianwaobikeze.zendesk.com/api/v2/tickets.json').then(result => console.log(result.data)).catch(err => console.log(err))
-// listTotaltickets();
 
 // in this function loop list of tickets 25 on each page
 // give option to next page
