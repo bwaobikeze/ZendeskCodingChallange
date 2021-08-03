@@ -4,7 +4,6 @@ const pageTurn = require("./pageChoice");
 
 
 
-
 BeginPro();
 
 function BeginPro() {
