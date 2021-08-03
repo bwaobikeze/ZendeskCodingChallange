@@ -34,7 +34,6 @@ axios.get(
 
 async function pageDececion() {
 
-  while(getpage==true){
 
   let choice = prompt(
     "Would you like to turn the next page? "
@@ -60,51 +59,13 @@ if (choice == 'yes') {
           console.log(error.message);
     
     }}
-// else if (choiceTwo== 2){
-      //   axios
-      //   .get(
-      //     "https://zccbrianwaobikeze.zendesk.com/api/v2/tickets.json?page[size]=25&page[before]=eyJvIjoibmljZV9pZCIsInYiOiJhUm9BQUFBQUFBQUEifQ==",
-      //     {
-      //       headers: {
-      //         Authorization:
-      //           "Basic YnJpYW4ud2FvYmlrZXplQGdtYWlsLmNvbTpLaW5kYm95MjBA",
-      //         Cookie:
-      //           "__cfruid=c2d00345d80097a8018a3307ab6e5cc0abe6c1a2-1627511044",
-      //       },
-      //     }
-      //   )
-      //   .then((res) => {
-      //     console.log(res.data);
-      //   })
-      //   .catch((error) => {
-      //     console.error(error);
-      //   });
+      }
+      else if (choice=='no'){
+        let ticketSelect= prompt("please select a ticket you would like to view: ");
+        DT.showingTicket(ticketSelect);
 
-
-      // }
       }
 
-  }
-  
-      
-
-  
- 
-
-    
-    // else if (choice=='no'){
-
-    // DT.showingTicket();
-    //}
-
 
   }
-    
- 
- 
- 
- 
-
-  
-
-exports.pageDececion = pageDececion;
+    exports.pageDececion = pageDececion;

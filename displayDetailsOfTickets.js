@@ -3,7 +3,7 @@ const axios = require('axios');
 const prompt = require("prompt-sync")({ sigint: true });
 
 // This function shows details for a specfic ticket chosen
-function showingTicket(){
+function showingTicket(ticketId){
 
 
     axios.get(`https://zccbrianwaobikeze.zendesk.com/api/v2/tickets/${ticketId}.json`, {
